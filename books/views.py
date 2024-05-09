@@ -19,7 +19,7 @@ def get_reviews(request):
 
 
 def get_books(request, pk):
-    book = Book.objects.get(category=pk)
+    book = Book.objects.filter(category=pk)
     context = {
         'books': book
     }

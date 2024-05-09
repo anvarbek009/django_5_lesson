@@ -9,6 +9,12 @@
     {% if books %}
         <ul>
             {% for book in books %}
+            
+                <li>{{ book.name }}</li>
+                <li>{{ book.author }}</li>
+                <li>{{ book.category }}</li>
+                <li>{{ book.named }}</li>
+                <li>{{ book.name }}</li>
                 <li>{{ book.name }}</li>
             {% endfor %}
         </ul>
